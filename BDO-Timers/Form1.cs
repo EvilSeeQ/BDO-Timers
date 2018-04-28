@@ -74,7 +74,7 @@ namespace BDO_Timers
 
         }
         #endregion
-
+        
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             this.Opacity = trackBar1.Value * 0.1;
