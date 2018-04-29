@@ -12,6 +12,8 @@ namespace BDO_Timers
 {
     public partial class Form1 : Form
     {
+
+        // State variables
         int tid1;
         int tid2;
         bool tid1On = false;
@@ -25,6 +27,7 @@ namespace BDO_Timers
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //State the value of tid1 and sets the value of tid1On to true (Activates the timer).
             tid1 = 900;
             tid1On = true;
         }
@@ -36,6 +39,7 @@ namespace BDO_Timers
         }
         private void button3_Click(object sender, EventArgs e)
         {
+            //Disables the timer.
             tid1On = false;
             tid2On = false;
         }
@@ -47,14 +51,18 @@ namespace BDO_Timers
         }
         #region Functions
 
+        //Create Method to perform task.
         private void doWork()
         {
 
 
             if (tid1On)
             {
+                //Converts and posts the value of tid1 to string (15:00)
                 label1.Text = tid1 / 60 + ":" + ((tid1 % 60) >= 10 ? (tid1 % 60).ToString() : "0" + tid1 % 60);
+                //Subtracts the value from tid1 by 1 each time.
                 tid1--;
+                // if statement, to evaluate if the remaining value of tid1 is less than 0, and disables the timer if true.
                 if (tid1 < 0)
                 {
                     tid1On = false;
