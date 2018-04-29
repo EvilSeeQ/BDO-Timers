@@ -1,7 +1,7 @@
 # BDO-Timers
 Simple BDO Timer for Market Place and Horse Market.
 Open source, feel free to view, edit and use as you wish, project files and solutions are included.
-To run the program, simply download the CDTimer2.exe file, and run.
+To run the program, simply download the BDOTimers.exe file, and run.
 
 # Functions
 Currently there are 2 timers, one for Market place registrations, and one for horse market registrations.
